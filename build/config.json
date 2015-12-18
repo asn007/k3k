@@ -1,0 +1,12 @@
+{
+  "out": "../static/",
+  "in": "../src/client/",
+  "tasks": {
+    "coffee": {
+      "bundles": {
+        "frontend": "/frontend/coffee/app.coffee",
+        "dashboard": "/dashboard/coffee/app.coffee"
+      }
+    }
+  }
+}
