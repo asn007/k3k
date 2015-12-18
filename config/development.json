@@ -1,0 +1,88 @@
+{
+  "server": {
+    "bind": 3000,
+    "session": {
+      "name": "sal",
+      "key": "correct horse battery staple"
+    }
+  },
+  "database": {
+    "protocol": "mongodb",
+    "user": "",
+    "password": "",
+    "host": "localhost",
+    "port": 27017,
+    "database": "lacheio2"
+  },
+  "bot": {
+    "steamLogin": "steamlogin",
+    "steamPassword": "steampassword",
+    "email": {
+      "type": "IMAP",
+      "server": "imap.yandex.ru:443",
+      "user": "bot@lacheio.ru",
+      "password": "asdasdasd"
+    }
+  },
+  "authentication": {
+    "apiKey": "FF926AF9ED75F76E12C77172890DF773",
+    "realm": "http://localhost:3000/",
+    "returnURL": "http://localhost:3000/auth/session/return"
+  },
+  "website": {
+    "title": "SteamWin",
+    "unauthenticatedPermissions": {
+      "upload": {
+        "avatar": false,
+        "document": false
+      },
+      "access": {
+        "website": true,
+        "maintenance": false,
+        "stacktrace": false,
+        "dashboard": false
+      },
+      "retrieve": {
+        "roles": false,
+        "users": false,
+        "pages": true,
+        "blogposts": true,
+        "leagues": true,
+        "teams": true,
+        "rosters": true,
+        "matches": true,
+        "brackets": true
+      },
+      "create": {
+        "roles": false,
+        "leagues": false,
+        "pages": false,
+        "blogposts": false,
+        "teams": false,
+        "rosters": false,
+        "matches": false,
+        "brackets": false
+      },
+      "edit": {
+        "roles": false,
+        "leagues": false,
+        "pages": false,
+        "blogposts": false,
+        "teams": false,
+        "rosters": false,
+        "matches": false,
+        "brackets": false
+      },
+      "delete": {
+        "roles": false,
+        "leagues": false,
+        "pages": false,
+        "blogposts": false,
+        "teams": false,
+        "rosters": false,
+        "matches": false,
+        "brackets": false
+      }
+    }
+  }
+}

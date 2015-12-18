@@ -1,0 +1,50 @@
+.stats-block {
+  display: block;
+  min-width: 100%;
+  min-height: 180px;
+  &.__sales {
+    background: #9F86FF;
+  }
+  &.__new_buyers {
+    background: #d7ce00;
+  }
+  &.__revenue {
+    background: #1BC98E;
+  }
+  &.__broken_percent {
+    background: #E64759;
+  }
+
+  .statistics {
+    padding: 20px !important;
+    border-bottom: 1px solid #fff;
+
+    .title {
+      letter-spacing: 0.15em;
+      font-size: 85%;
+      text-transform: uppercase;
+    }
+
+    small {
+      color: @text-color;
+      line-height: 1;
+      font-size: 50%;
+      &.growth::after {
+        /*▲*/
+        content: " ▴";
+      }
+      &.drop::after {
+        /*▼*/
+        content: " ▾";
+      }
+      &.stagnation::after {
+        content: " —";
+      }
+    }
+
+  }
+
+  hr {
+    border-color: #fff;
+  }
+}
